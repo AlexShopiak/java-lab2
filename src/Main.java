@@ -6,12 +6,10 @@ public class Main {
     public static void main(String[] args) {
         byte[][] initMatrix = Inquirer.inquire();
 
-        Calculator.calculate(initMatrix);
+        byte[][] tMatrix = Calculator.transposeMatrix(initMatrix);;
+        int sum = Calculator.calculateSum(tMatrix);
 
-        byte[][] matrix = Calculator.getMatrix();
-        int sum = Calculator.getSum();
-
-        Printer.printMatrix(matrix);
+        Printer.printMatrix(tMatrix);
         Printer.printSum(sum);
     }
 }
