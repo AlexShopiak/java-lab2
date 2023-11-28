@@ -4,13 +4,13 @@ import util.Printer;
 
 public class Main {
     public static void main(String[] args) {
-        byte[][] initMatrix = Inquirer.inquire();
-        Printer.printMatrix("Matrix C", initMatrix);
+        byte[][] bMatrix = Inquirer.inquire();
+        Printer.printMatrix("Matrix B", bMatrix);
 
-        byte[][] tMatrix = Calculator.transposeMatrix(initMatrix);;
-        int sum = Calculator.calculateSum(tMatrix);
+        byte[][] cMatrix = Calculator.transposeMatrix(bMatrix);;
+        int sum = Calculator.calculateSum(cMatrix);
 
-        Printer.printMatrix("Matrix C^T", tMatrix);
+        Printer.printMatrix("Matrix C=B^T", cMatrix);
         Printer.printSum(sum);
     }
 }
