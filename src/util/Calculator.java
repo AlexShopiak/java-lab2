@@ -7,7 +7,7 @@ public class Calculator {
 
         if (rows == 1 && cols == 1) {
             return matrix;
-        } else if (rows == cols) {
+        /*} else if (rows == cols) {            // mutates the matrix!!!
             for (int i = 0; i < rows - 1; i++) {
                 for (int j = i + 1; j < cols; j++) {
                     byte buff = matrix[i][j];
@@ -16,7 +16,7 @@ public class Calculator {
                 }
             }
 
-            return matrix;
+            return matrix;*/
         } else {
             byte[][] tMatrix = new byte[cols][rows]; //inverted rows, cols
 
