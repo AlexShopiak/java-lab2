@@ -7,7 +7,7 @@ public class Main {
         byte[][] bMatrix = Inquirer.inquire();
         Printer.printMatrix("Matrix B", bMatrix);
 
-        byte[][] cMatrix = Calculator.transposeMatrix(bMatrix);;
+        byte[][] cMatrix = Calculator.transposeMatrix(bMatrix);
         int sum = Calculator.calculateSum(cMatrix);
 
         Printer.printMatrix("Matrix C=B^T", cMatrix);

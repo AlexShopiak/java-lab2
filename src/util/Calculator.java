@@ -6,7 +6,8 @@ public class Calculator {
         int cols = matrix[0].length;
 
         if (rows == 1 && cols == 1) {
-            return matrix;
+            byte[][] copy = {{matrix[0][0]}};
+            return copy;
         /*} else if (rows == cols) {            // mutates the matrix!!!
             for (int i = 0; i < rows - 1; i++) {
                 for (int j = i + 1; j < cols; j++) {
